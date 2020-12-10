@@ -28,7 +28,7 @@ exports.up = function(knex) {
       table.integer('ingredient_id')
         .notNullable().unsigned()
         .references('ingredient_id').inTable('ingredients')
-      table.string('unit_of_measurement', 128)
+      table.string('unit_of_m', 128)
         .notNullable().unsigned()
       table.float('quantity')
         .notNullable().unsigned()
